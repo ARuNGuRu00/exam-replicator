@@ -122,7 +122,7 @@ class replicator(MDApp):
                 MDTextField(hint_text= "Enter over here",mode='rectangle',id="field"),
                 MDRaisedButton(text="Create",on_press=lambda x:self.createGroup(),pos_hint={"right":1}),
                 orientation="vertical",spacing=10,padding=20,id="box"),
-            size_hint=(.8,None),height="200dp",pos_hint={"center_x":.5,"center_y":.7},)
+            size_hint=(.8,None),height="200dp",pos_hint={"center_x":.5,"center_y":.7},elevation=8,)
         self.mainScreen.add_widget(self.smallCard)
 
     def testTemp(self,testname):

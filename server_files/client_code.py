@@ -1,6 +1,6 @@
 import socket 
 client=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-client.connect(('localhost',9999))
+client.connect(('192.168.224.10',9999))
 def recives():
     client.send("grouplist".encode())
     grouplist=client.recv(20000).decode()
